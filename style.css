@@ -1,0 +1,169 @@
+body { font-family:"Lucida Grande", "Lucida Sans", Sans Serif;font-size:16px;background:#fff;color:#333;text-align:center;}
+
+#container {text-align:left; width:800px;margin:auto;}
+
+h1 {font-size:24px;}
+h2 {font-size:16px;}
+h3 {font-size:16px;}
+h3.none {padding:25px;width:520px;text-align:center;-moz-border-radius: 2px; -webkit-border-radius: 2px;border:solid 1px #333;background:#eee;}
+
+a {text-decoration:none;}
+.message a {font-weight:bold;}
+
+#searchbar { margin:0 0 20px 0; width:371px;float:left;font-size:12px;}
+#like { margin:0 0 20px 0; padding:0;width:400px; height:60px;float:right;clear:right;background:#fff;}
+#data {width:550px;float:left;}
+#data_container {width:550px;float:left;}
+#sidebar {width:200px;float:right;background:#fff;font-size:12px;}
+#searchform {width:377px;float:left; margin: 0 0 10px 0;}
+#status {text-align:center;padding:25px;}
+#more {padding:10px; margin:10px 0 10px 0;width:550px;text-align:left;font-size:12px;-moz-border-radius: 2px; -webkit-border-radius: 2px;border:solid 1px #333;background:#eee;cursor:pointer;height:100px;}
+#more:hover{text-decoration:underline;background:#ccc}
+#footer {clear:both;folat:left;}
+#search{height:37px;}
+input.txt {
+	border: 1px solid #333;
+	width:280px;
+	height:33px;
+	
+}
+input.btn {
+	border: 1px solid #333;
+	width: 73px;
+	height:35px;
+	font-size:16px;
+	padding-bottom:2px;
+}
+
+.post {
+	margin:0 0 10px 0;	
+	width:550px;
+	border:solid 1px #eee;
+	padding:10px;
+	font-size:12px;
+	-moz-border-radius: 2px; 
+	-webkit-border-radius: 2px;
+	overflow:hidden;
+}
+.message {
+	margin:0;
+
+}
+.image {
+	float:left;
+	width:100px;
+	padding:0;
+	margin:10px 0px 0 0;
+	overflow:hidden;
+}
+
+
+.link {
+	float:right;
+	margin: 10px 0 0 0;
+	width:440px;
+}
+.description {
+	float:right;
+	margin:10px 0 0 0;
+	width:440px;
+	display:block;
+
+}
+
+.caption {
+	float:right;
+	font-size:10px;
+	width:440px;
+	color:#366633;
+}
+
+
+.meta {
+	float:left;
+	clear:both;
+	margin: 0;
+	font-size:10px;
+	color:#666;
+	padding: 0;
+}
+
+.icon { 
+	float:left;
+	margin:4px 4px 0 0;
+}
+
+. icon img {
+}
+
+.time {
+		float:left;
+	margin:6px 0 0 0;
+}
+
+#data #share{margin-top:40px}
+
+#share {font-size:12px; text-align:left;border:0;}
+
+#share a{width:140px;border:solid 1px #cccccc;padding:13px 10px 10px 33px;text-decoration:none;color:#3B5998;cursor:pointer;margin:0px 12px 12px 0px; background-color:#fff;float:left;clear:both; -moz-border-radius: 2px; -webkit-border-radius: 2px;}
+
+#data #share a {clear:none; width:125px;}
+
+.share-embed {background:url(/web/20130424053828im_/http://fbstatussearch.com/images/icons/embed-icon.gif) no-repeat 8px 12px;}
+.share-email {background:url(/web/20130424053828im_/http://fbstatussearch.com/images/icons/email-icon.gif) no-repeat 8px 12px;}
+.share-fb {background:url(/web/20130424053828im_/http://fbstatussearch.com/images/icons/facebook-icon.gif) no-repeat 8px 12px;}
+.share-twitter {background:url(/web/20130424053828im_/http://fbstatussearch.com/images/icons/twitter-icon.gif) no-repeat 8px 12px;}
+
+#embedsetup {width:270px; float:left;border:1px solid #eee;padding:10px;margin:20px 0;}
+#embedcode {float:left;clear:left;border:1px solid #eee;padding:10px;margin:20px 0 0 0px;}
+#preview {width:480px; float:right;padding:0px;margin:20px 0 0 10px;}
+
+input.e {
+	border: 1px solid #333;
+	width:120px;
+	height:20px;
+	font-size:12px;
+	padding:2px;
+	float:left;
+	margin:4px 0 10px 10px;
+}
+
+textarea {font-family:"Lucida Grande", "Lucida Sans", Sans Serif;font-size:10px;width:250px;height:60px;}
+
+#width, #height {width:40px;}
+#posts {width:20px;}
+
+label {float:left;clear:left; margin:10px 10px 10px 0; width:120px;	font-size:12px;}
+input.b {
+	border: 1px solid #333;
+	width:120px;
+	height:34px;
+	font-size:16px;
+	padding:4px;
+	margin:10px;
+	float:left;
+		font-size:12px;
+}
+
+
+/*
+     FILE ARCHIVED ON 05:38:28 Apr 24, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:20:54 Sep 24, 2018.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 197.802 (3)
+  esindex: 0.015
+  captures_list: 215.91
+  CDXLines.iter: 13.185 (3)
+  PetaboxLoader3.datanode: 152.921 (4)
+  exclusion.robots: 0.139
+  exclusion.robots.policy: 0.128
+  RedisCDXSource: 2.083
+  PetaboxLoader3.resolve: 260.839 (2)
+  load_resource: 246.583
+*/

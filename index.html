@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="banner-styles.css?v=1536297681.0" />
+<link rel="stylesheet" type="text/css" href="iconochive.css?v=1536297681.0" />
+<!-- End Wayback Rewrite JS Include --><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="favicon.png"/>
+<script type="text/javascript">
+var nexturl ="";
+var lastid ="";
+var param;
+<!--Trace more-->
+function myFunction() {
+    param = $('#search').val();
+    //alert("I am an alert box!");
+    if (param != "") {
+        $("#status").show();
+		
+		//alert("Show ");
+        var u = 'https://graph.facebook.com/search/?callback=&limit=5&q='+param;
+		$("#data").empty();		//empty the data div
+		//alert("Wait for 5 sec?");
+		setTimeout(function(){
+					getResults(u)},
+				200);
+        //getResults(u);
+		//alert("When myFunction runs show more line 20");
+		$("#more").show(); 
+        }
+		
+	$("#more").click(function () { 
+    $("#status").show();
+	//alert("Show ");
+    $("#more").hide();  
+    pageTracker._trackPageview('/?q=/more');
+    var u = nexturl;
+    getmoreResults(u);
+	$("#more").show(); 
+  });
+}
+</script>
+<title>Facebook Status Search - Search Facebook Status in Real Time</title>
+<meta name="description" content="Facebook status search, search status facebook, facebook status real time, Fahad Uddin Facebook status search, Facebook update search">
+<meta name="distribution" content="global">
+<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.cuteTime.min.js"></script>
+<script type="text/javascript" src="ofs.js"></script>
+<script type="text/javascript" src="more_results.js"></script>
+<script type="text/javascript" src="ga.js"></script>
+<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8"/>
+</head>
+<body style="margin:0px;padding:0px;"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="timestamp.js?v=1536297681.0" charset="utf-8"></script>
+<script type="text/javascript" src="graph-calc.js?v=1536297681.0" charset="utf-8"></script>
+<script type="text/javascript" src="auto-complete.js?v=1536297681.0" charset="utf-8"></script>
+<script type="text/javascript" src="toolbar.js?v=1536297681.0" charset="utf-8"></script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+.wb-autocomplete-suggestions {
+    text-align: left; cursor: default; border: 1px solid #ccc; border-top: 0; background: #fff; box-shadow: -1px 1px 3px rgba(0,0,0,.1);
+    position: absolute; display: none; z-index: 2147483647; max-height: 254px; overflow: hidden; overflow-y: auto; box-sizing: border-box;
+}
+.wb-autocomplete-suggestion { position: relative; padding: 0 .6em; line-height: 23px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.02em; color: #333; }
+.wb-autocomplete-suggestion b { font-weight: bold; }
+.wb-autocomplete-suggestion.selected { background: #f0f0f0; }
+</style>
+
+		<div id="container">
+		<div id="header" style="height:39px; background-color:#3B5998; margin-bottom: 10px; ">
+		<div id="logo" style="display:inline;">
+								<h1 style="display:inline; font-family: 'klavika_boldbold_tf';color: #FFFFFF;padding-left:50px;padding-left: 50px;font-size:30px;"><a style="color:#fff;" href="http://www.fbstatussearch.com/">facebook status search</a></h1>
+		</div>
+		<div style="margin-bottom:10px;float:right;">
+				<form action="" method="get" id="searchform" onsubmit="return false;">
+				<input name="q" type="text" id="search" onclick="this.select();" size="32" maxlength="128" class="txt" style="padding: 0 5px;">
+				<input type="button" id="hit" value="Search" onclick="myFunction();return false" class="btn">
+				</form>
+		</div>
+		</div>
+		<div id="data_container">
+		<div id="data">
+			<div id="status_container">
+		  <div id="status"><img src="loader.gif" alt="loading facebook status search"/></div>
+		  </div>
+		</div>
+		
+		</div>
+
+		<div id="sidebar" style="float:right;">
+						<div style=" background-color: #fcf7da;
+									border-radius: 5px 5px 5px 5px;
+									color: #735005;
+									padding: 8px;margin-bottom:10px;">
+										<h4>Welcome!</h4>
+								</div>
+						
+								
+								<div style=" background-color: #FFEFC6;
+									border-radius: 5px 5px 5px 5px;
+									color: #735005;
+									padding: 8px;margin-bottom:10px;">
+										<h4>How To Use</h4>
+										<p>Write down the tag to be searched in the top search area. For example,type in,<br>
+										<strong>Fahad</strong><br>
+										and you will get the latest relevant Facebook updates of <strong>all the people around the world</strong> that have used the word <strong>"Fahad"</strong>.</p>
+								</div>
+							<!--	<div style=" background-color: #FFE1C0;
+									border-radius: 5px 5px 5px 5px;
+									color: #735005;
+									padding: 8px;margin-bottom:10px;" >
+										<h4>Why Use it?</h4>
+										<p>Here is why you would <em>love it</em>.</p>
+								</div>
+								-->
+								<div style=" background-color: #EEEEEE;
+									border-radius: 5px 5px 5px 5px;
+									color: #735005;
+									padding: 8px;">
+										<h4>Copyright</h4>
+										<p>Copyright 2013. All rights reserved. We are not linked with Facebook.<br>
+										Created by <a href="#">Fahad Uddin</a>.
+										</p>
+								</div>
+								
+						</div>	<!--Sidebar Ends-->
+		
+						  		<div id="more" style="text-align:center;">More Posts <img src="" alt="more status"/></div>
+				<div id="footer">
+					<p style="font-size:12px;">Copyrights 2013.Created by <a href="#">Fahad Uddin</a>. All Rights Reserved.</p>
+				</div>	<!--Footer Ends-->
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl./" : "http://www./");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-16080447-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<script type="text/javascript">
+$(document).ready(function () {
+$("#search").keyup(function(e){
+$("#status").empty();
+/*
+var keyCode = e.keyCode || e.which;
+
+if(keyCode == 13) {*/
+myFunction();
+//}
+});
+//alert("On Page load hide more Line 151 ");
+$("#status").hide();
+$("#more").hide(); 
+});
+</script>
+</body></html>
